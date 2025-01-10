@@ -1,0 +1,64 @@
+:root{
+    --white: rgb(245,245,245);
+    --blue: rgb(25, 167, 146);
+    --hover: rgb(6, 100, 86);
+    --box-shadow: 4px 8px 8px rgba(56, 56, 56, 0.3);
+    --success: rgb(207, 240, 240);
+}
+
+.admin-right .wrapper .heading{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1350px;
+    border-bottom: 1 bx solid gray;
+    color: var(--blue);
+}
+.admin-right .wrapper hr{
+    margin-top: -3px;
+    border: 2px solid var(--blue);
+    margin-bottom: 50px;
+
+}
+.icon{
+   margin-left: 15px;
+    width:20px;
+}
+.icon:nth-child(even){
+   
+   width: 20px;
+
+}
+table{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 30px auto;
+   
+}
+.table{
+    margin-right: 20px;
+    max-width: 1140px;
+    margin: auto;
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+}
+.table thead{
+    padding-top: 10px;
+    color: var(--white);
+}
+.table th, td{
+    padding: 20px 80px;
+}
+.table td{
+    padding: 20px 60px;
+}
+.table th{
+    background-color: var(--blue);
+    border-radius: 50px;
+    
+}
+.table tr:nth-child(even){
+    background-color: rgba(25, 167, 146, 0.857);
+    color: var(--white);
+}

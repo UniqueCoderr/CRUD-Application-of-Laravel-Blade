@@ -1,0 +1,28 @@
+:root{
+    --white: rgb(245,245,245);
+    --blue: rgb(25, 167, 146);
+    --hover: rgb(6, 100, 86);
+}
+nav{
+    width: 100%;
+    margin: 50px auto;
+    
+}
+.hidden{
+    display: none;
+}
+span,nav a{
+    background-color: var(--blue);
+    display: inline;
+    padding: 20px;
+    margin-left: 40px; 
+    color: var(--white);
+    /* max-width: 90px; */
+    border-radius: 40px
+}
+nav a{
+    font-size:1.2rem;
+    color: var(--white);
+    text-decoration: none;
+
+}

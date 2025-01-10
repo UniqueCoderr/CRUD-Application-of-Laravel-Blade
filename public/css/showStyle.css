@@ -1,0 +1,46 @@
+:root{
+    --white: rgb(245,245,245);
+    --blue: rgb(25, 167, 146);
+    --hover: rgb(6, 100, 86);
+    --box-shadow: 4px 8px 8px rgba(56, 56, 56, 0.3);
+}
+
+.show-right{
+    margin: 50px auto;
+    padding: 40px 60px;
+    color: var(--blue);
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    font-size: 1.2rem;
+}
+.show-right .show-data{
+    margin: 45px 30px;
+}
+
+.show-right .show-data h1{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.9rem;
+}
+.show-right .show-data h3{
+    font-size: 1.6rem;
+    margin-top: 15px 0;
+    
+}
+
+.show-right .btn{
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    background-color: var(--blue);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.12rem;
+}
+
+.show-right .btn:hover{
+    background-color: var(--hover);
+}

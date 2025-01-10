@@ -1,0 +1,76 @@
+:root{
+    --white: rgb(245,245,245);
+    --blue: rgb(25, 167, 146);
+    --hover: rgb(6, 100, 86);
+}
+/* create start */
+.create{
+    color: var(--blue);
+    max-width: 1400px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    
+}
+.create .wrapper{
+    background-color: var(--white);
+    padding: 10px 50px;
+}
+
+.create .wrapper form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding-left: 100px; 
+}
+
+.create .wrapper input{
+    font-size: 1.2rem;
+}
+
+
+
+.create .wrapper label {
+    font-size: 1.2rem;
+    color: var(--blue);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.create .wrapper input{
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px; 
+    border: 1px solid var(--blue);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.create .wrapper input:focus{
+    border-color: var(--blue);
+    outline: none;
+}
+
+.create .wrapper button {
+    padding: 11px;
+    border-radius: 4px;
+    background-color:var(--blue);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    width: 52%;
+    
+}
+
+.create .wrapper button:hover {
+    background-color: var(--hover);
+}
+span{
+    color:rgb(207, 64, 66);
+    z-index: 999;
+
+}

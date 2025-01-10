@@ -1,0 +1,192 @@
+:root{
+    --white: rgb(245,245,245);
+    --blue: rgb(25, 167, 146);
+    --hover: rgb(6, 100, 86);
+    --box-shadow: 4px 8px 8px rgba(56, 56, 56, 0.3);
+    --success: rgb(207, 240, 240);
+}
+.alert {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.close{
+    display: none; 
+}
+
+.custom-alert {
+    padding: 20px;
+    border: 1px solid var(--blue);
+    background-color: var(--success);
+    color: var(--blue);
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 25px;
+    color: var(--blue);
+    font-weight: 500;
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 99;
+}
+
+.close:checked ~ .custom-alert  {
+    display: none; 
+   visibility: hidden;
+}
+.close:checked ~ .close-btn{
+    display: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+header{
+    background-color: var(--blue);
+}
+
+header .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: auto;
+    text-align: start;
+    
+}
+header .wrapper h2 a{
+    text-decoration: none;
+    color: var(--white);
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    list-style: none;
+    cursor: pointer;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2rem;
+    padding: 25px;
+}
+header ul li a:hover{
+    background-color: var(--hover);
+}
+header .wrapper h2{
+    color: var(--white);
+}
+/* hero start */
+.hero{
+    margin: 100px;
+}
+
+.hero .wrapper{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+.hero .wrapper h1{
+    position: relative;
+    color: var(--blue);
+    margin-bottom: 30px;
+} 
+.hero .wrapper h1::after{
+    position: absolute;
+    content: " ";
+    height: 4px;
+    width: 150px;
+    background: var(--blue);
+    bottom:-1rem;
+    left: 0;
+}
+.hero .wrapper p{
+    color: var(--blue);
+    max-width: 600px;
+    margin: 40px 0;
+    line-height: 1.5;
+    align-self:justify ;
+}
+.hero .wrapper .btn{
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    margin: 10px;
+}
+.hero .wrapper .btn a{
+    text-decoration: none;
+    color: var(--white);
+}
+.hero .wrapper img{
+    height: 650px;
+    margin-top: -50px;
+}
+/* admin start */
+.admin{
+  display: flex;
+
+}
+.admin-left{
+    background-color: var(--white);
+    width: 250px;
+    text-align: center;
+}
+.admin-left h2{
+    margin-bottom: 20px;
+}
+.admin-left h2 a{
+    text-decoration: none;
+    color: var(--blue);
+}
+.admin-left ul{
+    list-style: none;
+    padding-left: 0;
+}
+.admin-left ul li{
+    margin: 25px 0;
+}
+aside ul li a{
+    color: var(--blue);
+    text-decoration: none;
+    padding: 10px 70px;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+aside ul li a:hover{
+    background: var(--hover);
+    color: var(--white);
+    display: block;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    
+    background-color: var(--blue);
+}
+footer p{
+    text-align: center;
+    color: var(--white);
+
+}
